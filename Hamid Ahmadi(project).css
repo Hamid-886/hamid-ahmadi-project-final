@@ -1,0 +1,1312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--primary-color:white;
+--second-color:#c6c1c199;
+--third-color:#2f89fc;
+--li-Register-color:#008aff;
+--icon-heart-color:#2aa3e1;
+--star-color:gold;
+--Cars-Vehicles-text1-color:#0d6ddb;
+--Cars-Vehicles-icon:red;
+--id-real-state-color: rgb(123, 114, 114);
+--box-shadow-color:gray;
+--text-color:#fdf6f6;
+--next-page-color: rgba(153, 139, 139, 0.875);
+--four-color:black;
+--background-color:rgba(128, 128, 128, 0.148);
+--five-color:rgb(234, 217, 217);
+--six-color:#0d6ddb;
+--footer-color:#333333;
+}
+header{
+    width: 100%;
+    height:75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(to left ,rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url(image/hero_2.jpg);
+    color:var(--primary-color) ;
+}
+nav{
+    display: flex;
+    position: relative;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    font-family:"Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.menu-ithem{
+    display: flex;
+    align-items: center;
+}
+.second-ul{
+    display: flex;
+    gap:10%;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    left: 75%;
+}
+.first-ul{
+    display: flex;
+    gap:10%;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    left: 45%;
+}
+.li-login{
+    padding-right: 15%;
+    padding-left: 25px;
+    border-left: gainsboro solid 1px;
+}
+.li-Register{
+    background-color:var(--li-Register-color);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10%;
+}
+.menu-icon{
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+}
+#DIRECTORYADS{
+    display: none;
+}
+.DIRECTORYADS:hover{
+    cursor: pointer;
+}
+.li-Home:hover{
+    cursor: pointer;
+}
+.li-ads:hover{
+    cursor: pointer;
+}
+.li-about:hover{
+    cursor: pointer;
+}
+.li-blog:hover{
+    cursor: pointer; 
+}
+.li-contact:hover{
+    cursor: pointer; 
+}
+.li-login:hover{
+    cursor: pointer; 
+}
+.li-Register:hover{
+    cursor: pointer; 
+}
+.DIRECTORYADS{
+    font-size: 25px;
+}
+.ads-listings{
+    text-align: center;
+    margin-bottom: 1%;
+    font-family:"Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.product-want{
+    text-align: center;
+    margin-bottom: 1%;
+    font-family:"Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container{
+    position: relative;
+    top: 35%;
+    word-spacing: 2px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.main{
+        width: 100%;
+        height: 350vh;
+        margin-top: 5%;
+        display: flex;
+        gap: 20px;
+}
+.left-main{
+    width: 40%;
+    height: 350vh;
+    margin-right: 10%;
+    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    padding: 0 5%;
+}
+
+.right-main{
+    width: 70%;
+    height: 350vh;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    
+}
+.Cars-Vehicles-pic{
+    background-image: url(image/img_1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+.Cars-Vehicles-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Cars-Vehicles-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+.Cars-Vehicles-icon{
+    font-size: 25px;
+    color: var(--icon-heart-color);
+    background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 1%;
+}
+.Cars-Vehicles-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Cars-Vehicles-text2{
+    margin-bottom: 5%;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.Vehicles-star1{
+    font-size: 25px;
+    color:var(--star-color);
+}
+.Vehicles-star2{
+    font-size: 25px; 
+    color: var(--second-color);
+}
+.Cars-Vehicles-rate{
+    display: flex;
+    align-items: center;  
+}
+.Cars-Vehicles-text1:hover{
+    cursor: pointer;
+}
+.Cars-Vehicles-icon:hover{
+    background-color: var(--Cars-Vehicles-icon);
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.Cars-Vehicles-text1:hover{
+    cursor: pointer;
+    color:var(--Cars-Vehicles-text1-color);
+}
+.Real-Estate-pic{
+    background-image: url(image/img_2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+.Real-Estate-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Real-Estate-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.Real-Estate-icon{
+    font-size: 25px;
+    color: var(--icon-heart-color);
+    background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 1%;
+}
+.Real-Estate-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Real-Estate-text2{
+    margin-bottom: 5%;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.Real-Estate-star1{
+    font-size: 25px;
+    color:var(--star-color);
+}
+.Real-Estate-star2{
+    font-size: 25px; 
+    color: var(--second-color);
+}
+.Real-Estate-rate{
+    display: flex;
+    align-items: center;  
+}
+.Real-Estate-text1:hover{
+    cursor: pointer;
+}
+.Real-Estate-icon:hover{
+    background-color: var(--Cars-Vehicles-icon);
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.Real-Estate-text1:hover{
+    cursor: pointer;
+    color:var(--Cars-Vehicles-text1-color);
+}
+.Furniture-pic{
+    background-image: url(image/img_3.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+.Furniture-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Furniture-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.Furniture-icon{
+    font-size: 25px;
+    color: var(--icon-heart-color);
+    background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 1%;
+}
+.Furniture-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Furniture-text2{
+    margin-bottom: 5%;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.Furniture-star1{
+    font-size: 25px;
+    color:var(--star-color);
+}
+.Furniture-star2{
+    font-size: 25px; 
+    color: var(--second-color);
+}
+.Furniture-rate{
+    display: flex;
+    align-items: center;  
+}
+.Furniture-text1:hover{
+    cursor: pointer;
+}
+.Furniture-icon:hover{
+    background-color: var(--Cars-Vehicles-icon);
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.Furniture-text1:hover{
+    cursor: pointer;
+    color:var(--Cars-Vehicles-text1-color);
+}
+.Electronics-pic{
+    background-image: url(image/img_4.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+.Electronics-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Electronics-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.Electronics-icon{
+    font-size: 25px;
+    color: var(--icon-heart-color);
+    background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 1%;
+}
+.Electronics-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Electronics-text2{
+    margin-bottom: 5%;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.Electronics-star1{
+    font-size: 25px;
+    color:var(--star-color);
+}
+.Electronics-star2{
+    font-size: 25px; 
+    color: var(--second-color);
+}
+.Electronics-rate{
+    display: flex;
+    align-items: center;  
+}
+.Electronics-text1:hover{
+    cursor: pointer;
+}
+.Electronics-icon:hover{
+    background-color: var(--Cars-Vehicles-icon);
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.Electronics-text1:hover{
+    cursor: pointer;
+    color:var(--Cars-Vehicles-text1-color);
+}
+#Real-Estate{
+    color: var(--id-real-state-color);
+}
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+   
+}
+#text,#text-2,#Real-Estate{
+    height: 30px;
+    padding: 0 10px;
+}
+
+.filter{
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+}
+#range{
+    height: 25px;
+    width: 100%;
+}
+.Category{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.left-main-More-Info{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.left-main-discrib{
+    line-height: 30px;
+   width: 80%;
+}
+.Real-Estate1,.Real-Estate2,.Real-Estate3,.Real-Estate4{
+    display: flex;
+    gap: 5px;
+}
+.next-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    gap: 20px;
+}
+.Cars-Vehicles,.Real-Estate,.Furniture,.Electronics{
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
+    border-radius: 2%;  
+    padding: 0 5%;
+}
+.next-page{
+    position: relative;
+    left: 50%;
+}
+.next-page1,.next-page2,.next-page3,.next-page4,.next-page10{
+    background-color: var(--next-page-color);
+    border-radius: 50%;
+    padding: 3%;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+.next-page2,.next-page3,.next-page4,.next-page10{
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+.next-page1{
+color: var(--four-color);
+}
+.Trend{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    background-color:var(--background-color)
+}
+.Trend-titr{
+    display: flex;
+    font-family:monospace; 
+    padding-top: 2%;
+    margin-left: 10%;
+    color:var(--li-Register-color);
+    font-size: 30px;
+}
+.Trend-text{
+    text-decoration: underline;
+}
+.Trend-box{
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    margin: 0% 10%;
+}
+.Real-Estate-2{
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
+    border-radius: 2%;
+    padding: 2px;
+    display: flex;
+    gap: 3%;
+    height: 30vh;
+    background-color: var(--primary-color);
+}
+.Real-Estate2-pic{
+    background-image: url(image/img_2.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 25vh;
+    background-size: cover;
+}
+.Real-Estate2-container{
+    width: 60%;
+    height: 25vh;
+}
+.Real-Estate2-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Real-Estate2-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.Real-Estate2-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Real-Estate2-rate{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+.Real-Estate2-star1{
+    font-size: 25px;
+    color: var(--star-color);
+}
+.Real-Estate2-star2{
+    font-size: 25px;
+    color: var(--second-color);
+}
+/*  */
+.Cars-Vehicles-2{
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
+    border-radius: 2%;
+    padding: 2px;
+    display: flex;
+    gap: 3%;
+    height: 30vh;
+    background-color: var(--primary-color);
+}
+.Cars-Vehicles-2-pic{
+    background-image: url(image/img_1.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 25vh;
+    background-size: cover;
+}
+.Cars-Vehicles-2-container{
+    width: 60%;
+    height: 25vh;
+}
+.Cars-Vehicles-2-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Cars-Vehicles-2-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+.Cars-Vehicles-2-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Cars-Vehicles-2-rate{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+.Cars-Vehicles-2-star1{
+    font-size: 25px;
+    color: var(--star-color);
+}
+.Cars-Vehicles-2-star2{
+    font-size: 25px;
+    color: var(--second-color);
+}
+/*  */
+.Furniture-2{
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
+    border-radius: 2%;
+    padding: 2px;
+    display: flex;
+    gap: 3%;
+    height: 30vh;
+    background-color: var(--primary-color);
+}
+.Furniture-2-pic{
+    background-image: url(image/img_3.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 25vh;
+    background-size: cover;
+}
+.Furniture-2-container{
+    width: 60%;
+    height: 25vh;
+}
+.Furniture-2-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Furniture-2-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+.Furniture-2-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Furniture-2-rate{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+.Furniture-2-star1{
+    font-size: 25px;
+    color: var(--star-color);
+}
+.Furniture-2-star2{
+    font-size: 25px;
+    color: var(--second-color);
+}
+/*  */
+.Electronics-2{
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
+    border-radius: 2%;
+    padding: 2px;
+    display: flex;
+    gap: 3%;
+    height: 30vh;
+    background-color: var(--primary-color);
+}
+.Electronics-2-pic{
+    background-image: url(image/img_4.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 25vh;
+    background-size: cover;
+}
+.Electronics-2-container{
+    width: 60%;
+    height: 25vh;
+}
+.Electronics-2-titr{
+    display: flex;
+    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.Electronics-2-first-titr{
+    background-color: var(--second-color);
+    font-size: 15px;
+    border-radius: 40%;
+    padding: 3px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+.Electronics-2-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: var(--third-color);
+}
+.Electronics-2-rate{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+.Electronics-2-star1{
+    font-size: 25px;
+    color: var(--star-color);
+}
+.Electronics-2-star2{
+    font-size: 25px;
+    color: var(--second-color);
+}
+/*  */
+.Real-Estate2-text1,.Cars-Vehicles-2-text1,.Furniture-2-text1,.Electronics-2-text1:hover{
+    cursor: pointer;
+}
+.Testimonials{
+    width: 100%;
+    height: 80vh;
+}  
+.Testimonials-titr{
+    display: flex;
+    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--li-Register-color);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+.Testimonials-underline{
+    text-decoration: underline
+}
+.Testimonials-pic{
+    background-image: url(image/person_3.jpg);
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 45vh;
+    background-size: cover;
+    border-radius: 50%;
+}
+.Testimonials-secound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Testimonials-name{
+    color: var(--box-shadow-color);
+    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.Testimonials-text{
+        text-align: center;
+        width: 60%;
+        padding-top: 2%;
+        font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: var(--box-shadow-color);
+}
+.Newsletter{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--Cars-Vehicles-text1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+    gap: 1%;
+}
+.Newsletter-text{
+    margin-top: 5%;
+}
+.email-input{
+    width: 90%;
+    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+.Newsletter-form{
+    display: flex;
+}
+.Newsletter-submit{
+    width: 25%;
+    height: 10vh;
+    border: none;
+}
+.email-input::-webkit-input-placeholder {
+    color: var(--primary-color);
+}
+.Newsletter-submit:hover{
+cursor: pointer;
+background-color:var(--four-color);
+color: var(--primary-color);
+}
+.Newsletter-titr{
+    color: var(--text-color);
+    font-size: 20px;
+  
+}
+.Newsletter-text{
+    font-family: sans-serif;
+    color:var(--five-color);
+}
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--footer-color);
+}
+.footer{
+    width: 90%;
+    height: 50vh;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: stretch;
+    border-bottom: 2px solid grey;
+    font-family: sans-serif;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.footer-About{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45%;
+    gap: 20px;
+}
+.footer-Navigations{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.footer-Navigations-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-Follow-Us{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.footer-Follow-Us-icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+.footer-Navigations-About,.footer-Navigations-Services,.footer-Navigations-Testimonials,.footer-Navigations-Contact{
+    text-decoration: none;
+    color: var(--box-shadow-color);
+}
+.footer-About-titr,.footer-Navigations-titr,.footer-Follow-titr{
+    color: var(--text-color);
+}
+.footer-About-text,.footer-Follow-Us-icon1{
+    color: gray;
+}
+.search::-webkit-input-placeholder {
+     color: var(--box-shadow-color);
+}
+.footer-search-form{
+    width: 25%;
+    display: flex;
+    height: fit-content;
+}
+.search{
+    padding: 0px 5px;
+    height: 6vh;
+    background-color: var(--footer-color);
+    border: solid 1px gray;
+}
+.footer-search-submit{
+    width: 25%;
+    background-color: var(--six-color);
+    color: var(--primary-color);
+}
+.footer-search-submit:hover{
+cursor: pointer;
+background-color:var(--third-color) ;
+}
+.Copyright{
+    text-align: center;
+    padding-top: 5%;
+    word-spacing: 2px;
+    color: var(--box-shadow-color);
+}
+.Copyright-icon{
+    padding: 0 5px;
+    color: var(--box-shadow-color);
+}
+.Copyright-Colorlib{
+    text-decoration: none;
+    color: var(--box-shadow-color);
+}
+.Copyright-Colorlib:hover{
+    cursor: pointer;
+    color: var(--text-color);
+}
+/* ------Responsive------ */
+@media(min-width:1025px) and (max-width:1440px){
+}
+@media(min-width:781px) and (max-width:1024px){
+   .filter-form{
+    width: 100%;
+   }
+   .next-page10{
+    width: 30px;
+   }
+   .Testimonials-titr{
+    padding: 2% 0;
+   }
+   .Testimonials-pic{
+    width: 25%;
+   }
+   .Testimonials-secound{
+    height: 67vh;
+    padding-bottom: 5%;
+   }
+   .Newsletter{
+    padding: 0px 5%;
+   }
+   .Newsletter-text{
+    font-size: 15px;
+   }
+}
+@media(min-width:481px) and (max-width:780px){
+    .menu-icon{
+        opacity: 1;
+    }
+    .menu-ithem{
+        display: none;
+    }
+    input:checked ~ .menu-ithem{
+       display:inline-block;
+    }
+    .first-ul{
+        display:block;
+        position: relative;
+        top: 70px;
+    }
+    .second-ul{
+          display:block;
+          position: relative;
+          top: 70px;
+          left: 30px;
+      }  
+    .right-main{
+        grid-template-columns: auto;
+        height:1240vh;
+        margin-top: 5%;
+        gap: 1%;
+    }
+    .li-login {
+        padding-right: 0%; 
+     padding-left: 0; 
+      border-left:none;
+    }
+    .li-Register{
+     margin-top: 5px;  
+    }
+    .main{
+        height: 1140vh;
+        display: unset;
+   }
+   .next-page{
+        position: relative;
+        left:0%;
+    }
+    .left-main{
+        width: 100%;
+        height: 175vh;
+    }
+    .filter-form{
+        width: 100%;
+    }
+    .Trend-box{
+        grid-template-columns: auto;
+    }
+    .Trend{
+        height: 945vh;
+        gap: 2%;
+    }
+    .Trend-box{
+        grid-template-columns: auto;
+    }
+    .Real-Estate-2{
+        display:unset;
+        height: 150vh;
+    }
+    .Real-Estate2-pic{
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+    }
+    .Real-Estate2-container{
+        width: 100%;
+    }
+    .Real-Estate2-titr{
+        justify-content: space-between;
+    }
+    .Cars-Vehicles-2{
+        display:unset;
+        height: 150vh;
+    }
+    .Cars-Vehicles-2-pic{
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+    }
+    .Cars-Vehicles-2-container{
+        width: 100%;
+    }
+    .Cars-Vehicles-2-titr{
+        justify-content: space-between;
+    }
+    .Furniture-2{
+        display:unset;
+        height: 150vh;
+    }
+    .Furniture-2-pic{
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+    }
+    .Furniture-2-container{
+        width: 100%;
+    }
+    .Furniture-2-titr{
+        justify-content: space-between;
+    }
+    .Cars-Vehicles-pic,.Real-Estate-pic,.Furniture-pic,.Electronics-pic{
+        height: 60vh;
+    }
+    .Cars-Vehicles,.Real-Estate,.Furniture,.Electronics{
+        padding: 2% 5%;
+    }
+    .Cars-Vehicles-titr,.Furniture-titr,.Real-Estate-titr,.Electronics-titr{
+        justify-content: space-between;
+    }
+   .Electronics-2{
+    display:unset;
+    height: 135vh;
+   }
+   .Electronics-2-pic{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+   }
+   .Electronics-2-container{
+    width: 100%;
+   }
+   .Electronics-2-titr{
+    justify-content: space-between;
+   }
+   .Testimonials{
+      height: 105vh;
+   }
+   .Testimonials-titr{
+     padding-bottom: 5%;
+   }
+   .Testimonials-pic{
+    width: 30%;
+   }
+    .Newsletter{
+        height: 30vh;
+        justify-content: space-between;
+        padding: 0% 5%; 
+    }
+   .footer{
+    height: 100vh;
+    padding-bottom: 5%;
+   }
+   .footer-container{
+    flex-direction: column;
+    width: 100%;
+   }
+   .footer-About{
+    width: 100%;
+   }
+   .footer-Navigations{
+    align-items: flex-start;
+   }
+   .footer-Follow-Us{
+    width:35%
+   }
+   footer{
+    height: 130vh;
+   }
+   .footer-Follow-Us-icon{
+    width: 100%;
+    justify-content: space-between;
+   }
+   .footer-search-form{
+    width: 100%;
+   }
+   .search{
+    width: 70%;
+   }
+   .footer-search-submit{
+    height: 6vh;
+   }
+}
+@media (max-width:480px){
+    .menu-icon{
+        opacity: 1;
+        position: absolute;
+        right: 35px;
+    }
+    .menu-ithem{
+        display: none;
+        height: 40vh;
+        padding-right: 10%;
+        padding-top: 15%;
+    }
+    input:checked ~ .menu-ithem{
+       display:inline-block;
+    }
+    .first-ul{
+        display:block;
+        position: relative;
+        top: 70px;
+    }
+    .second-ul{
+          display:block;
+          position: relative;
+          top: 70px;
+          left: 30px;
+      }  
+    .right-main{
+        grid-template-columns: auto;
+        margin-top: 5%;
+        gap: 1%;
+        height: 650vh;
+    }
+    .li-login {
+        padding-right: 0%; 
+     padding-left: 0; 
+      border-left:none;
+    }
+    .li-Register{
+     margin-top: 5px;  
+    }
+    .main{
+        height: 1140vh;
+        display: unset;
+   }
+   .next-page{
+        position: relative;
+        left:0%;
+    }
+    .left-main{
+        width: 90%;
+        height: 115vh;
+    }
+    .filter-form{
+        width: 100%;
+    }
+    .Trend-box{
+        grid-template-columns: auto;
+    }
+    .Trend{
+        height: 395vh;
+        gap: 1%;
+    }
+    .Trend-box{
+        grid-template-columns: auto;
+    }
+    .Real-Estate-2{
+        display:unset;
+        height: 60vh;
+    }
+    .Real-Estate2-pic{
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+    }
+    .Real-Estate2-container{
+        width: 100%;
+    }
+    .Real-Estate2-titr{
+        justify-content: space-between;
+    }
+    .Cars-Vehicles-2{
+        display:unset;
+        height:60vh;
+    }
+    .Cars-Vehicles-2-pic{
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+    }
+    .Cars-Vehicles-2-container{
+        width: 100%;
+    }
+    .Cars-Vehicles-2-titr{
+        justify-content: space-between;
+    }
+    .Furniture-2{
+        display:unset;
+        height: 60vh;
+    }
+    .Furniture-2-pic{
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+    }
+    .Furniture-2-container{
+        width: 100%;
+    }
+    .Furniture-2-titr{
+        justify-content: space-between;
+    }
+    .Cars-Vehicles-pic,.Real-Estate-pic,.Furniture-pic,.Electronics-pic{
+        height: 30vh;
+    }
+    .Cars-Vehicles,.Real-Estate,.Furniture,.Electronics{
+        padding: 2% 5%;
+    }
+    .Cars-Vehicles-titr,.Furniture-titr,.Real-Estate-titr,.Electronics-titr{
+        justify-content: space-between;
+    }
+   .Electronics-2{
+    display:unset;
+    height:60vh;
+   }
+   .Electronics-2-pic{
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+   }
+   .Electronics-2-container{
+    width: 100%;
+   }
+   .Electronics-2-titr{
+    justify-content: space-between;
+   }
+   .Testimonials{
+      height: 105vh;
+   }
+   .Testimonials-titr{
+     padding-bottom: 5%;
+   }
+   .Testimonials-pic{
+    width: 60%;
+   }
+    .Newsletter{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .Newsletter-titr{
+        width: 90%;
+    }
+    .Newsletter-form{
+        width: 100%;
+    }
+   .footer{
+    height: 100vh;
+    padding-bottom: 5%;
+   }
+   .footer-container{
+    flex-direction: column;
+    width: 100%;
+   }
+   .footer-About{
+    width: 100%;
+   }
+   .footer-Navigations{
+    align-items: flex-start;
+   }
+   .footer-Follow-Us{
+    width: 35%
+   }
+   footer{
+    height: 130vh;
+   }
+   .footer-Follow-Us-icon{
+    width: 100%;
+    justify-content: space-between;
+   }
+   .footer-search-form{
+    width: 100%;
+   }
+   .search{
+    width: 70%;
+   }
+   .footer-search-submit{
+    height: 6vh;
+   }
+}
+
